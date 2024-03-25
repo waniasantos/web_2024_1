@@ -1,24 +1,17 @@
-import Pai from "./components/atividade01/01Pai";
-import * as PC from "./components/atividade01/02MeuPC";
-import * as Batalha from "./components/atividade01/03Batalha";
+import FunctionContextA from './components/questao01/FunctionContextA'
+import { Avo as Avo1 } from './components/questao02/ComponenteAvo'
+import { Avo as Avo2 } from './components/questao03/ComponenteAvo'
 
 function App() {
   return (
-    <div>
-        <Pai />
-        <hr />
-        <h1>Meu PC</h1>
-        <PC.PlacaMae nome={"ATX"} valor = {400}/>
-        <PC.Memoria nome={"HyperX Fury"} valor = {350}/>
-        <PC.PlacaDeVideo nome={"NVDIA"} valor = {700}/>
-        <hr />
-        <Batalha.World>
-          <Batalha.Arena nome= "Romeirão" />
-          <Batalha.Arena nome= "Moraisão" />
-        </Batalha.World>
-
+    <div className={style.content}>
+      <div className={style.q01}>
+        <FunctionContextA />
+      </div>
+      <Avo1 />
+      <Avo2 />
     </div>
   )
 }
 
-export default App;
+export default App
