@@ -1,7 +1,7 @@
 import style from './App.module.css'
-import FunctionContextA from './components/questao01/FunctionContextA'
-import { Avo as Avo1 } from './components/questao02/ComponenteAvo'
-import { Avo as Avo2 } from './components/questao03/ComponenteAvo'
+import FunctionContextA from './components/atividade02/questao01/FunctionContextA'
+import { Avo as Avo1 } from './components/atividade02/questao02/ComponenteAvo'
+import { Avo as Avo2 } from './components/atividade02/questao03/ComponenteAvo'
 
 function App() {
   return (
