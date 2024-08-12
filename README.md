@@ -1,18 +1,28 @@
 # WEB 2024.1
 Professor: Jefferson Carvalho
 
-## 🔗 Links
+Repositório dedicado a disciplina de Desenvolvimento de Software para WEB. 
 
-Playlist da disciplina:
+No decorrer do curso, serão desenvolvidos exemplos práticos e atividades utilizando as seguintes tecnologias:
 
-[![youtube](https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/playlist?list=PL2R4y_yfi1pdtkyzHS2LKLaK2p_S7N1gv&si=-qavYRARmgWOLOvc)
+- **Fundamentos**: HTML, CSS e JavaScript.
+- **Front-end**: React e Bootstrap.
+- **Back-end**: Node.js e Express.js.
+- **Banco de dados**: MongoDB, Mongoose.
+- **Cloud**: Firebase (Firestore).
 
-## Conteúdos
+### Links
+
+[![youtube](https://img.shields.io/badge/playlist_da_disciplina-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/playlist?list=PL2R4y_yfi1pdtkyzHS2LKLaK2p_S7N1gv&si=-qavYRARmgWOLOvc)
+
+### Conteúdos
 
 - Funções Internas
 - Props
+- Hieraquia de props
+- Multiplos componentes
 - props.children e React.Children
-- Comunnicação Parent-Child
+- Comunicação Pai e Filho (Parent-Child)
 - Estados (useState)
 - Contextos
 - Efeitos (useEffect)
@@ -25,14 +35,32 @@ Playlist da disciplina:
 - Bootstrap
 - CRUD
 
-## Anotações 
+### Documentações
+
+ - [React](https://react.dev/)
+ - [Create React App](https://create-react-app.dev/)
+ - [Next.js](https://nextjs.org/)
+ - [Vite](https://vitejs.dev/guide/)
+ - [Remix](https://remix.run/docs/en/1.14.3/tutorials/blog)
+ - [W3School](https://www.w3schools.com/)
+ - [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+ - [HTML Standard](https://html.spec.whatwg.org/)
+ - [Web Standard | W3C](https://www.w3.org/standards/)
+
+### Anotações 
 
 Primeiro passo: criar uma aplicação em React
+
 ```bash
-  npx create-react-app my_app
+npx create-react-app my_app
+cd my_app
+npm start
 ```
 
 `create-react-ap` serve para criar a aplicação (pré requisito isntalar a ultima atualização do node)
+
+
+
 
 PASTAS
 - `node_module` (n mexe): bibliotecas que vou precisar para construir a aplicação 
@@ -63,5 +91,5 @@ index.html --> index.js --> App.js (criar toda a àrvore de componentes react)
 
 - o que é package.json? é um arquivo que organiza todas as dependência e scripts relacionados ao meu projeto
 
-## Indicações
+### Indicações
 - Estudar Next.js, typscript, rust nas ferias
