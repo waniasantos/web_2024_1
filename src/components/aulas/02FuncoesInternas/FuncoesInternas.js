@@ -9,22 +9,22 @@ const FuncoesInternas = () => {
         return x + y
     }
 
-    function subtrair(x,y) {
-        return x - y;
+    const subtrair = (x,y) => {
+        return x - y 
     }
 
     function multiplicar(x,y) {
-        return x * y;
+        return x * y
     }
 
     function dividir(x,y) {
-        return x / y;
+        return x / y
     }
 
     return (
         //o que tiver dentro de {} ele vai interpretar como código javascript
         <div>
-            <h1>Calculadora</h1>
+            <h1>CALCULADORA</h1>
             <h3>O resultado da soma é: {somar(num1,num2)}</h3>
             <h3>O resultado da subtração é: {subtrair(num1,num2)}</h3>
             <h3>O resultado da multiplicação é: {multiplicar(num1,num2)}</h3>

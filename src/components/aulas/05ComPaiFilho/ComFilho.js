@@ -1,25 +1,18 @@
-// Pai mandando mensagem para o Filho
-/* const ComFilho = ({props}) => {
-    
-    let {mensagem} = props
+const ComFilho = ({ mensagem, enviarMensagemParaOPai }) => {
 
     return (
         <div>
             <h2>Mensagem do Pai: {mensagem}</h2>
-        </div>
-    )
-} */
-
-// Filho mandando mensagem para o Pai
-const ComFilho = (props) => {
-    
-    let {mensagem} = props
-
-    return (
-        <div>
-            <h2>Mensagem do Pai: {mensagem}</h2>
-            <button>
-                Enviar mensagem para o Pai
+            <button
+                onClick={
+                    () => {
+                        // a chamada dessa propriedade está apontando para uma função
+                        // implementada em outro componente
+                        enviarMensagemParaOPai("Oi, Pai. Tudo bom?")
+                    }
+                }
+            >
+                Enviar mensagem para o Pai!
             </button>
         </div>
     )

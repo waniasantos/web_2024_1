@@ -1,0 +1,14 @@
+    O DROP DRILLING trata-se de um percurso de tranferência de dados que 
+é passada por multiplos componentes descendentes de um determinado componente 
+pai. Esse  mecanismo é muito verboso e muito laborioso, visto que componentes 
+intermediários acabam recebendo props que não são relevantes, causando um 
+aclopamento excessivo e até dependências acidentais entre componentes que 
+não deviam estar interligados. 
+    Uma solução para esse problema é a criação de CONTEXTO. Ele permite que 
+qualquer componente descendente daquela árvore tenha acesso global aos dados, 
+impedindo que essa passagem seja feita manualmente em cada componente até 
+chegar no desejado. Primeiro, você cria um contexto usando React.createContext(), 
+que fornece um provedor e um consumidor. O provedor é usado para fornecer os dados 
+para a árvore de componentes. Context.Provider envolve os componentes e fornece os 
+dados para eles, após isso os componentes usam o hook useContext para acessar os dados 
+do contexto.

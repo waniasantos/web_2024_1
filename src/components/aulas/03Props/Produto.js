@@ -11,12 +11,12 @@ const Produto = ({nome, categoria, valor}) => {
     // const {nome, categoria, valor} = props
     return (
         <div>
-            {/*}
+            {/*} // jsx não tem comentário, ele se utiliza do javascript
             <h1>{objJSON.notas.nota2}</h1>
             {*/}
             <h3>Nome: {nome}</h3>
             <h3>Categoria: {categoria}</h3>
-            <h3>Preço: {valor}</h3>
+            <h3>Preço: R$ {valor}</h3>
         </div>
     )
 

@@ -19,12 +19,12 @@ No decorrer do curso, serão desenvolvidos exemplos práticos e atividades utili
 
 - Funções Internas
 - Props
-- Hieraquia de props
-- Multiplos componentes
-- props.children e React.Children
+    - Hieraquia de props
+    - props.children e React.Children
 - Comunicação Pai e Filho (Parent-Child)
 - Estados (useState)
-- Contextos
+- Contextos (useContext)
+    - Drop Drilling
 - Efeitos (useEffect)
 - Promessas (then-catch)
 - Promessas (async-await)
@@ -49,7 +49,7 @@ No decorrer do curso, serão desenvolvidos exemplos práticos e atividades utili
 
 ### Anotações 
 
-Primeiro passo: criar uma aplicação em React
+Primeiro passo: criar uma aplicação em React (pré requisito: ter node instalado)
 
 ```bash
 npx create-react-app my_app
@@ -74,22 +74,20 @@ Rodar aplicação (porta: localhost:3000):
 npm start
 ```
 
-Basta editar scr/App.js e salvar que já modifica a localhost
-
 - `webpack compiled sucessfully` ==> compila com sucesso a aplicação gera uma bild e ess` bild ele joga pro servidor localhost e disponibiliza a aplicação no browser
 
-html é baseado em tags
-tag de bloco pula um espaço irma da
+- aplicações react pura do CRA são SPA -- single page application
 
-aplicações react pura são SPA -- single page application
-
-index.html --> index.js --> App.js (criar toda a àrvore de componentes react)
+    - index.html --> index.js --> App.js (criar toda a àrvore de componentes react)
 
 - `jsx` é todo o html que é escrito num componente react dentro de um arquivo javascript
 
-- o que é um componente? é uma função que retorna um código jsx, como se fosse um html dentro de umarquivo javascript que depois é renderizado num browser
+- o que é um componente? é uma função que retorna um código jsx, como se fosse um html dentro de um arquivo javascript que depois é renderizado num browser
 
-- o que é package.json? é um arquivo que organiza todas as dependência e scripts relacionados ao meu projeto
+- o que é package.json? é um arquivo que organiza todas as dependência e scripts relacionados ao projeto
 
-### Indicações
 - Estudar Next.js, typscript, rust nas ferias
+
+- **Prop Drilling**: Passar dados através de múltiplos componentes para alcançar um componente filho específico, mesmo que os componentes intermediários não usem esses dados.
+
+- **Context**: Uma solução para evitar o prop drilling, permitindo que dados sejam compartilhados de forma global em uma árvore de componentes e acessados diretamente por qualquer componente filho, independentemente da profundidade.
