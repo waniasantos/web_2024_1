@@ -91,3 +91,5 @@ npm start
 - **Prop Drilling**: Passar dados através de múltiplos componentes para alcançar um componente filho específico, mesmo que os componentes intermediários não usem esses dados.
 
 - **Context**: Uma solução para evitar o prop drilling, permitindo que dados sejam compartilhados de forma global em uma árvore de componentes e acessados diretamente por qualquer componente filho, independentemente da profundidade.
+
+teste
